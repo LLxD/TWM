@@ -1,88 +1,20 @@
-## Repository for the discipline of Mobile and Web Technologies
-
-### JS
----
-file firstSteps.js
-
-Declaring Variables
-
-```js
-let changeableVariable = "Lucas"
-const nonChangeableVariable = 3.14
-```
-
-Loops
-
-```js
-for (let index = 0; index < array.length; index++) {
-  const element = array[index]
-}
-
-while (condition) {}
-```
-
-Declaring Functions and different types of functions
-
-```js
-//classic function
-function showMessage(message) {
-  console.log(message)
-}
-//arrow function
-const alsoShowsMessage = (message) => console.log(message)
-
-//anonymous functions (same use as the arrow function, but with different syntax)
-const anonymouslyShowingMessage = function (message) {
-  console.log(message)
-}
-
-showMessage("Oi")
-alsoShowsMessage("Oi de novo!")
-anonymouslyShowingMessage("Oi escondido!")
-```
-
----
-file workingWithArrays.js
-
-Working with Arrays
-
-```js
 //working with arrays
 // using const because this is always going to be an array
 const ourAmazingArray = [1, 2, 3, 4, 5]
-
 //accessing one array position
 console.log(ourAmazingArray[2])
-
 // iterating through array
 ourAmazingArray.forEach((value) => console.log(value))
 const ourNewAmazingArray = ourAmazingArray.map((value) => value)
-
 //adding to the end of the array
 ourAmazingArray.push(6)
-
 console.log(ourAmazingArray, ourNewAmazingArray)
-
 //removing the last item from the array
 ourAmazingArray.pop()
-
 console.log(ourAmazingArray, ourNewAmazingArray)
-```
-
-Interpolating values into strings
-
-```js
-const ourAmazingArray = [1, 2, 3, 4, 5]
-
 const showElement = (element, position) =>
   console.log(`The element ${element} is on position ${position}`)
-
 ourAmazingArray.map(showElement)
-```
-
-Working with JSON
-
-```js
 const ourAmazingJsonArray = [
   {
     userId: 1,
@@ -112,39 +44,7 @@ const ourAmazingJsonArray = [
 ]
 //show titles
 const showTitle = (obj) => console.log(obj.title)
-
 ourAmazingJsonArray.map(showTitle)
-
 //filter out titles which length is greater than 20
 const filterLongTitles = (obj) => obj.title.length < 20
-
 console.log(ourAmazingJsonArray.filter(filterLongTitles))
-```
-
----
-file OOP.js
-
-OOP in JS
-
-```js
-class Rectangle {
-  constructor(width, height) {
-    this.width = width
-    this.height = height
-  }
-
-  showValues() {
-    console.log(this.width, this.height)
-  }
-
-  calculateArea() {
-    console.log(this.width * this.height)
-  }
-}
-
-const myRectangle = new Rectangle(10, 20)
-myRectangle.showValues()
-myRectangle.calculateArea()
-
-
-```
