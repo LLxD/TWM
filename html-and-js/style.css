@@ -1,0 +1,59 @@
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 60px;
+  max-width: 50vw;
+  margin: 0 auto;
+}
+
+#list {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 60px;
+  max-width: 50vw;
+  margin: 0 auto;
+}
+
+.item {
+  padding: 20px 20px;
+  border: 4px dashed orangered;
+  min-height: 200px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  border-radius: 5px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+h2::first-letter {
+  text-transform: uppercase;
+}
+
+h2 {
+  color: blueviolet;
+}
+
+h4::first-letter {
+  text-transform: uppercase;
+}
+
+.icon {
+  border-radius: 50%;
+  max-width: 150px;
+  margin: 0 auto;
+}
+
+button {
+  display: block;
+  margin: 0 auto;
+}
