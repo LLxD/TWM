@@ -4,14 +4,18 @@
 ---
 file firstSteps.js
 
-Declaring Variables
+## Declaring Variables
+
+To declare our variables, we can use ```let``` for variables that can change and ```const``` for variables that are constant.
 
 ```js
 let changeableVariable = "Lucas"
 const nonChangeableVariable = 3.14
 ```
 
-Loops
+## Loops
+
+We can iterate through things using both our basic ```for``` and ```while``` instructions.
 
 ```js
 for (let index = 0; index < array.length; index++) {
@@ -21,7 +25,12 @@ for (let index = 0; index < array.length; index++) {
 while (condition) {}
 ```
 
-Declaring Functions and different types of functions
+## Declaring Functions and different types of functions
+
+Here, we have 3 types of declaration:
+- Our basic and classic function
+- Arrow function (which is a more compact way of declaring a function)
+- and Anonymous Function (which is a way to declare a function without a name)
 
 ```js
 //classic function
@@ -44,7 +53,15 @@ anonymouslyShowingMessage("Oi escondido!")
 ---
 file workingWithArrays.js
 
-Working with Arrays
+## Working with Arrays
+
+We have a lot of methods that can help us with arrays. A few of them are:
+- push
+- pop()
+- forEach()
+- map()
+
+You can see more methods [here](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array).
 
 ```js
 //working with arrays
@@ -69,7 +86,9 @@ ourAmazingArray.pop()
 console.log(ourAmazingArray, ourNewAmazingArray)
 ```
 
-Interpolating values into strings
+## Interpolating values into strings
+
+Here is an example of how we can insert the content from a variable inside some string.
 
 ```js
 const ourAmazingArray = [1, 2, 3, 4, 5]
@@ -80,7 +99,9 @@ const showElement = (element, position) =>
 ourAmazingArray.map(showElement)
 ```
 
-Working with JSON
+## Working with JSON
+
+Here is a few examples of working with JSON.
 
 ```js
 const ourAmazingJsonArray = [
@@ -124,7 +145,9 @@ console.log(ourAmazingJsonArray.filter(filterLongTitles))
 ---
 file OOP.js
 
-OOP in JS
+## OOP in JS
+
+Here we have one basic Rectangle class, in which we declare our width and height, in order to create Rectangle instances in the future. 
 
 ```js
 class Rectangle {
@@ -148,3 +171,28 @@ myRectangle.calculateArea()
 
 
 ```
+
+---
+
+## Working with an API 
+
+We can use the ```fetch``` method to fetch an API response and then work with the response data.
+
+Example:
+
+```js
+
+const fetchJoke = async (numberOfPhrases) => {
+  const phrasesArray = []
+  for (let i = 0; i < numberOfPhrases; i++) {
+    const phrase = await fetch(URL_TO_FETCH).then((res) => res.json())
+    const fetchedPhrase = await phrase
+    phrasesArray.push(fetchedPhrase)
+  }
+  return phrasesArray
+}
+
+
+```
+
+This snippet of code will then, fetch from the API and JSON.parse() the response!
