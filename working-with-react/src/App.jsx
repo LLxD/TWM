@@ -1,5 +1,6 @@
 import { useState } from "react"
 import logo from "./logo.svg"
+import Header from "./components/Header"
 import "./App.css"
 
 function App() {
@@ -9,14 +10,23 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
+        <Header text={"Lucas"} />
         <p>Hello Vite + React + TailwindCSS!</p>
+        <h2 className="text-xl text-red-600">{count}</h2>
         <p>
           <button
-            className="border-4 bg-white text-black rounded p-2 my-2"
+            className="border-4 bg-white text-black rounded p-2 m-2"
             type="button"
             onClick={() => setCount((count) => count + 1)}
           >
-            count is: {count}
+            +
+          </button>
+          <button
+            className="border-4 bg-white text-black rounded p-2 m-2"
+            type="button"
+            onClick={() => setCount((count) => count - 1)}
+          >
+            -
           </button>
         </p>
         <p>
