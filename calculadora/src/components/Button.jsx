@@ -10,7 +10,7 @@ const Button = ({
 }) => {
   return (
     <button
-      className="border-4 bg-white text-black rounded p-2 hover:text-red-500 transition-colors"
+      className="border-4 bg-white text-black rounded p-2 hover:text-red-500 hover:border-red-500 transition-colors"
       type="button"
       onClick={
         onClickFunction === undefined
