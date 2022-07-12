@@ -1,4 +1,3 @@
-import React from "react"
 export function Country({ country }) {
   return (
     <div className="border hover:bg-white hover:text-black transition-colors rounded gap-4 p-2 w-64 grid items-center justify-center grid-flow-row">
