@@ -1,5 +1,22 @@
 ## Repository for the discipline of Mobile and Web Technologies
 
+## Course Conclusion Chore
+
+[Check it live!](https://bx-challenge-frontend.herokuapp.com/) - WARNING: It can take a little bit to open, since it's on a free Heroku account.
+[Access the Front-End web app](https://github.com/LLxD/poketrader-front)
+[Access the Back-End web app](https://github.com/LLxD/poketrader-back)
+
+Front-End:
+- Vite
+- React
+- TailwindCSS
+
+Back-End:
+- Express
+
+DB:
+- MongoDB
+
 ### JS
 ---
 file firstSteps.js
