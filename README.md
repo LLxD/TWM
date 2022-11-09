@@ -1,5 +1,22 @@
 ## Repository for the discipline of Mobile and Web Technologies
 
+## Course Conclusion Chore
+
+- [Check it live!](https://bx-challenge-frontend.herokuapp.com/) - WARNING: It can take a little bit to open, since it's on a free Heroku account.
+- [Access the Front-End web app](https://github.com/LLxD/poketrader-front)
+- [Access the Back-End web app](https://github.com/LLxD/poketrader-back)
+
+Front-End:
+- Vite
+- React
+- TailwindCSS
+
+Back-End:
+- Express
+
+DB:
+- MongoDB
+
 ### JS
 ---
 file firstSteps.js
@@ -147,7 +164,7 @@ file OOP.js
 
 ## OOP in JS
 
-Here we have one basic Rectangle class, in which we declare our width and height, in order to create Rectangle instances in the future. 
+Here we have one basic Rectangle class, in which we declare our width and height, in order to create Rectangle instances in the future.
 
 ```js
 class Rectangle {
@@ -174,7 +191,7 @@ myRectangle.calculateArea()
 
 ---
 
-## Working with an API 
+## Working with an API
 
 We can use the ```fetch``` method to fetch an API response and then work with the response data.
 
